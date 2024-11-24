@@ -3,8 +3,8 @@ import { useState } from "react";
 import "./App.css";
 import Result from "./components/Result";
 import Animal from "./components/Animal";
-import AnimalsGrid from "./components/AnimalsGrid";
-import { animals } from "./data/AnimalsDb";
+import AnimalsGrid from "./components/AnimalGrid";
+import { animals } from "./Data/AnimalDb";
 
 function App() {
   const selectRandomAnimal = () => {
@@ -24,7 +24,7 @@ function App() {
       setTimeout(() => {
         setResult("");
         setRandomAnimal(selectRandomAnimal());
-      }, 5000);
+      }, 3000);
     } else {
       setResult("Lose!");
     }
